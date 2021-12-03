@@ -1,45 +1,84 @@
 body {
+  margin: 0px;
   background-color: #a461f6;
+  min-width: 250px;
+}
+
+.container {
+  position: absolute;
+  top: 130px;
+  left: 480px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 14px;
+  width: 399px;
+  height: 450px;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+#inputfield {
+  margin: auto;
+  padding: 20px 5px;
+  /* border: 2px solid blue; */
+  height: 80px;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  
+}
+#inputfield button.active {
+  opacity: 1;
+  pointer-events: auto;
+  background-color: red;
+}
+
+#inputfield input {
+  margin: 15px 4px;
+  font-size: 25px;
+  padding: 4px 8px;
+}
+#inputfield button {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 1px 8px;
+  background-color: #a461f6;
+  border-radius: 4px;
+  /* text-align: right; */
   
 }
 
 
+#error{
+  color: red;
+  
+  
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
 
-.container {
+ul li{
+  list-style: none;
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+  height: 10px;
+  width: 375px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 5px;
+}
 
+.close {
   position: absolute;
-  text-align: center;
-  /* background-color: white; */
-  border: 2px solid black;
-  border-radius: 20px;
-  width: 400px;
-  height: 400px;
-  left: 525px;
-  top: 100px;
-  padding: 20px 20px;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
 }
 
-.container input{
-    font-size: 20px;
-    padding: 5px 5px;
-    
-}
-
-#add{
-    font-size: 20px;
-    padding: 5px 5px;
-    background-color: white;
-    color: black;
-    margin: 2px 4px;
-    
-
-}
-
-#input-c{
-    background-color: white;
-    width: 300px;
-    height: 100px;
-    border-radius: 10px;
-    text-align: center;
-    
+.close:hover {
+  background-color: #f44336;
+  color: white;
 }

@@ -1,18 +1,28 @@
-
-const inputBox = document.querySelector(".inputbox")
-const addBtn = document.querySelector("#addbutton")
-
-
-inputBox.onkeyup = ()=> {
-    let userdata = inputBox.value;  // getting user entered value   
-
-    if( userdata.trim() !=0){
-        addBtn.classList.add("active")
-        console.log("helo every one")
-        
+function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("inputbox").value;
+    var t = document.createTextNode("inputValue");
+    li.appendChild(t);
+  
+    if (inputValue === '') {
+        alert("you must writing something!")
     }else{
-        addBtn.classList.remove("active")
-
+        document.getElementById("list").appendChild(li);
     }
-}
+    
+    document.getElementById("inputbox").value='';
+    var span = document.createElement('span')
+    var txt = document.createTextNode("\u00D7")
 
+    span.className("close")
+    span.appendChild(txt);
+    li.appendChild(span);
+
+    for( i=0; i < close.length; i++){
+        close[i].onclick = function(){
+            var div = this.parentElement;
+            div.style.display = "none"
+        }
+    }
+
+  }
